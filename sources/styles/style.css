@@ -1,0 +1,112 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+
+div {
+  display: block;
+}
+
+.header-content {
+  background-color: darkgrey;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+}
+
+nav img {
+  margin-left: 1.5rem;
+}
+
+.company span {
+  padding: 1rem 0 1rem 0;
+}
+
+ul {
+  display: block;
+}
+
+nav ul {
+  margin-right: 1.5rem;
+}
+
+nav li {
+  display: inline;
+}
+
+.menu-desktop {
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: flex-end;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner {
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.banner img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 85%;
+  height: auto;
+}
+
+.info h1 {
+  width: 22rem;
+  margin-bottom: 1.5rem;
+}
+
+.info h3 {
+  width: 22rem;
+}
+
+.startbutton {
+  width: 22rem;
+  text-align: center;
+  background-color: grey;
+  padding: 0.5rem;
+  border: 1px solid white;
+  margin-top: 1.5rem;
+}
+
+.startbutton a {
+  color: White;
+}
