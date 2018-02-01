@@ -1,3 +1,5 @@
+/* general section */
+
 html {
   font-size: 16px;
 }
@@ -21,9 +23,7 @@ div {
   display: block;
 }
 
-.header-content {
-  background-color: darkgrey;
-}
+/* top navigation logo section */
 
 nav {
   display: flex;
@@ -43,6 +43,20 @@ nav img {
   padding: 1rem 0 1rem 0;
 }
 
+.colmar-part {
+  color: black;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.academy-part {
+  color: grey;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* top navigation links section */
+
 ul {
   display: block;
 }
@@ -55,10 +69,23 @@ nav li {
   display: inline;
 }
 
+nav a {
+  color: grey;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
 .menu-desktop {
   display: flex;
   margin-right: 1.5rem;
   justify-content: flex-end;
+}
+
+/* header section */
+
+.header-content {
+  background-color: darkgrey;
 }
 
 .header-content {
@@ -109,4 +136,104 @@ nav li {
 
 .startbutton a {
   color: White;
+}
+
+/* information section */
+
+.information-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* information section left*/
+
+.information-main {
+  width: 60%;
+  height: auto;
+  padding: 0 1.5rem;
+  border-right: 1px solid darkgrey;
+}
+
+.information-main img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.information-main h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.information-main p {
+  font-size: 1.25rem;
+  font-style: normal;
+  padding-top: 1.5rem;
+}
+
+.information-main h5 {
+  font-size: 1rem;
+  font-style: normal;
+  padding: 2rem 0;
+}
+
+/* information section right (fun part)*/
+
+.information-blox-desktop {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+.information-blox-desktop img {
+  width: 35%;
+  height: auto;
+}
+
+.information1 {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid darkgrey;
+  border-bottom: double darkgrey;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.information2 {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid darkgrey;
+  padding: 1rem;
+}
+
+.information3 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: darkgrey;
+}
+
+.information-text {
+  padding-left: 1rem;
+}
+
+.information-text h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.information-text p {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+
+.information-text a {
+  color: lightblue;
+  font-weight: bold;
 }
