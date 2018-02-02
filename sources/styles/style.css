@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  line-height: 1.4;
 }
 
 h1 {
@@ -29,6 +30,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 nav div {
@@ -85,6 +89,7 @@ nav a {
 /* header section */
 
 .header-content {
+  padding-top: 4rem;
   background-color: darkgrey;
 }
 
@@ -262,6 +267,7 @@ nav a {
 .learn-boxes {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .learn-box {
@@ -301,4 +307,136 @@ nav a {
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   margin-bottom: 1.5rem;
+}
+
+/* Exhibit section*/
+
+#exhibit {
+  background-color: White;
+}
+
+#exhibit h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.exhibit-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.exhibit-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.exhibit {
+  height: auto;
+  margin: 0 1.5rem;
+}
+
+.exhibit video {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-info {
+  width: 90%;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.exhibit-info h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 0 1rem 1rem;
+}
+
+.exhibit-info p {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0 0 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.exhibit-blox-desktop {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+.exhibit1 {
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+}
+
+.exhibit1 img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibit2 {
+  display: flex;
+  align-items: center;
+  background-color: White;
+}
+
+.exhibit2 img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibit-text {
+  display: block;
+  max-width: 65%;
+}
+
+.exhibit-text h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.exhibit-text p {
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid darkgrey;
+  height: 5rem;
+}
+
+footer span {
+  color: darkgrey;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer ul {
+  color: darkgrey;
+  padding-right: 1.5rem;
+  margin-top: 1rem;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a {
+  color: darkgrey;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-left: 1rem;
 }
