@@ -51,6 +51,7 @@
 /* general section */
 
 html {
+  color: hsl(0, 0%, 35%);
   font-size: 16px;
   line-height: 1.4;
 }
@@ -71,7 +72,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
 }
 
@@ -85,7 +86,7 @@ nav img {
 
 .company span {
   padding: 1rem 0 1rem 0;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
@@ -99,6 +100,17 @@ nav img {
   color: grey;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.academy-part:hover {
+  color: hsl(240, 85%, 85%);
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.academy-part {
+  transition: color 750ms linear 20ms;
 }
 
 /* top navigation links section */
@@ -116,11 +128,23 @@ nav li {
 }
 
 nav a {
-  font-family: "Nunito";
-  color: grey;
+  font-family: "Nunito", sans-serif;
+  color: hsl(0, 0%, 35%);
   font-size: 1rem;
   font-weight: bold;
   padding-left: 1rem;
+}
+
+nav a:hover {
+  font-family: "Nunito", sans-serif;
+  color: hsl(240, 85%, 85%);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+nav a {
+  transition: color 300ms linear 20ms;
 }
 
 .menu-desktop {
@@ -133,7 +157,7 @@ nav a {
 
 .header-content {
   padding-top: 4rem;
-  background-color: darkgrey;
+  background-color: hsla(240, 20%, 85%, 0.5);
 }
 
 .header-content {
@@ -183,15 +207,15 @@ nav a {
 .startbutton {
   width: 20rem;
   text-align: center;
-  background-color: grey;
+  background-color: hsl(0, 0%, 35%);
   padding: 0.5rem;
   border: 1px solid white;
   margin-top: 1.5rem;
 }
 
 .startbutton a {
-  font-family: "Nunito";
-  color: White;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
 }
 
 /* information section */
@@ -210,6 +234,7 @@ nav a {
   padding: 0 1.5rem;
   border-right: 1px solid darkgrey;
   font-family: "Poppins", sans-serif;
+  color: hsl(0, 0%, 35%);
 }
 
 .information-main img {
@@ -274,12 +299,13 @@ nav a {
   display: flex;
   align-items: center;
   padding: 1rem;
-  background-color: darkgrey;
+  background-color: hsla(240, 20%, 85%, 0.5);
 }
 
 .information-text {
   font-family: "Poppins", sans-serif;
   padding-left: 1rem;
+  color: hsl(0, 0%, 35%);
 }
 
 .information-text h4 {
@@ -296,14 +322,14 @@ nav a {
 }
 
 .information-text a {
-  color: lightblue;
+  color: hsl(240, 85%, 85%);
   font-weight: bold;
 }
 
 /* Learning section*/
 
 #learning {
-  background-color: grey;
+  background-color: hsla(240, 20%, 85%, 0.5);
   font-family: "Poppins", sans-serif;
 }
 
@@ -330,7 +356,13 @@ nav a {
 
 .learn-box {
   width: 28%;
-  background-color: White;
+  background-color: hsl(240, 100%, 100%);
+  margin: 0 1rem 2rem 1rem;
+}
+
+.learn-box:hover {
+  width: 28%;
+  background-color: hsl(0, 0%, 70%);
   margin: 0 1rem 2rem 1rem;
 }
 
@@ -371,7 +403,7 @@ nav a {
 /* Exhibit section*/
 
 #exhibit {
-  background-color: White;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -434,7 +466,7 @@ nav a {
 .exhibit1 {
   display: flex;
   align-items: center;
-  background-color: darkgrey;
+  background-color: hsla(240, 20%, 85%, 0.5);
 }
 
 .exhibit1 img {
@@ -446,7 +478,7 @@ nav a {
 .exhibit2 {
   display: flex;
   align-items: center;
-  background-color: White;
+  background-color: #ffffff;
 }
 
 .exhibit2 img {
@@ -478,9 +510,9 @@ footer {
   justify-content: space-between;
   border-top: 1px solid darkgrey;
   height: 5rem;
-  font-family: "Nunito";
-  color: darkgrey;
-  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  color: hsl(0, 0%, 35%);
+  font-size: 0.75rem;
   font-weight: normal;
 }
 
@@ -500,8 +532,7 @@ footer li {
 
 footer a {
   padding-left: 1rem;
-  font-family: "Nunito";
-  color: darkgrey;
-  font-size: 1rem;
-  font-weight: normal;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
