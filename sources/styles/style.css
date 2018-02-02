@@ -237,3 +237,68 @@ nav a {
   color: lightblue;
   font-weight: bold;
 }
+
+/* Learning section*/
+
+#learning {
+  background-color: grey;
+}
+
+#learning .learning-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.learning-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.learn-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.learn-box {
+  width: 28%;
+  background-color: White;
+  margin: 0 1rem 2rem 1rem;
+}
+
+.learn-box img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.learn-box h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.learn-box h5 {
+  color: grey;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.learn-box p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
