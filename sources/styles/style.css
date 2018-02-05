@@ -518,6 +518,10 @@ a .learn-box {
   color: hsl(0, 0%, 100%);
 }
 
+.exhibit1 {
+  transition: background-color 400ms ease-in-out 40ms;
+}
+
 .exhibit1 img {
   width: 35%;
   height: auto;
@@ -534,6 +538,10 @@ a .learn-box {
 .exhibit2:hover {
   background-color: hsl(240, 3%, 38%);
   color: hsl(0, 0%, 100%);
+}
+
+.exhibit2 {
+  transition: background-color 400ms ease-in-out 40ms;
 }
 
 .exhibit2 img {
