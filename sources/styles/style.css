@@ -67,7 +67,15 @@ div {
 
 /* top navigation logo section */
 
-nav {
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,58 +84,69 @@ nav {
   width: 100%;
 }
 
-nav div {
+.desktop nav div {
   display: flex;
 }
 
-nav img {
+.desktop nav img {
   margin-left: 1.5rem;
 }
 
-.company span {
+.desktop.company {
+  display: flex;
+}
+
+.desktop .company span {
   padding: 1rem 0 1rem 0;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
-.colmar-part {
+.desktop .colmar-part {
   font-style: normal;
   color: black;
   font-size: 1.5rem;
 }
 
-.academy-part {
-  color: grey;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.academy-part:hover {
+.desktop .academy-part {
   color: hsl(240, 85%, 85%);
   font-weight: 400;
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
-.academy-part {
+.desktop .academy-part:hover {
+  color: rgb(169, 169, 169);
+}
+
+.desktop .academy-part {
   transition: color 750ms linear 20ms;
 }
 
 /* top navigation links section */
 
-ul {
+.desktop .menu-mobile {
+  display: none;
+}
+
+.desktop .menu-desktop {
+  display: flex;
+  margin-right: 1.5rem;
+  justify-content: flex-end;
+}
+
+.desktop ul {
   display: block;
 }
 
-nav ul {
+.desktop nav ul {
   margin-right: 1.5rem;
 }
 
-nav li {
+.desktop nav li {
   display: inline;
 }
 
-nav a {
+.desktop nav a {
   font-family: "Nunito", sans-serif;
   color: hsl(0, 0%, 35%);
   font-size: 1rem;
@@ -135,22 +154,12 @@ nav a {
   padding-left: 1rem;
 }
 
-nav a:hover {
-  font-family: "Nunito", sans-serif;
+.desktop nav a:hover {
   color: hsl(240, 85%, 85%);
-  font-size: 1rem;
-  font-weight: bold;
-  padding-left: 1rem;
 }
 
-nav a {
+.desktop nav a {
   transition: color 300ms linear 20ms;
-}
-
-.menu-desktop {
-  display: flex;
-  margin-right: 1.5rem;
-  justify-content: flex-end;
 }
 
 /* header section */
@@ -195,6 +204,7 @@ nav a {
   font-weight: bold;
   width: 22rem;
   margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .info h3 {
@@ -213,12 +223,28 @@ nav a {
   margin-top: 1.5rem;
 }
 
-.startbutton a {
+.startbutton:hover {
+  background-color: hsl(240, 85%, 85%);
+}
+
+a .startbutton {
   font-family: "Nunito", sans-serif;
   color: #ffffff;
 }
 
+.startbutton:visited a {
+  color: hsl(240, 85%, 85%);
+}
+
+.startbutton {
+  transition: background-color 1.2s linear 20ms;
+}
+
 /* information section */
+
+.information-mobile {
+  display: none;
+}
 
 .information-container {
   display: flex;
@@ -232,7 +258,7 @@ nav a {
   width: 60%;
   height: auto;
   padding: 0 1.5rem;
-  border-right: 1px solid darkgrey;
+  border-right: 1px solid dark;
   font-family: "Poppins", sans-serif;
   color: hsl(0, 0%, 35%);
 }
@@ -249,6 +275,7 @@ nav a {
   font-size: 2rem;
   font-weight: bold;
   padding-top: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .information-main p {
@@ -266,7 +293,7 @@ nav a {
   padding: 2rem 0;
 }
 
-/* information section right (fun part)*/
+/* information section right */
 
 .information-blox-desktop {
   display: flex;
@@ -328,12 +355,16 @@ nav a {
 
 /* Learning section*/
 
+.learn-boxes-mobile {
+  display: none;
+}
+
 #learning {
   background-color: hsla(240, 20%, 85%, 0.5);
   font-family: "Poppins", sans-serif;
 }
 
-#learning .learning-container {
+#learning .learning-desktop {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -341,35 +372,45 @@ nav a {
   padding-right: 4.5rem;
 }
 
-.learning-container h2 {
+.learning-desktop h2 {
   font-size: 2rem;
   font-weight: bold;
   padding: 2rem 0;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
-.learn-boxes {
+.learn-boxes-desktop {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 
 .learn-box {
   width: 28%;
   background-color: hsl(240, 100%, 100%);
   margin: 0 1rem 2rem 1rem;
+  color: rgb(169, 169, 169);
 }
 
 .learn-box:hover {
-  width: 28%;
-  background-color: hsl(0, 0%, 70%);
-  margin: 0 1rem 2rem 1rem;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: #fff;
+}
+
+.learn-box {
+  transition: background-color 50ms linear 40ms;
 }
 
 .learn-box img {
   display: flex;
   max-width: 100%;
   height: auto;
+}
+
+a .learn-box {
+  color: rgb(169, 169, 169);
 }
 
 .learn-box h4 {
@@ -381,7 +422,7 @@ nav a {
 }
 
 .learn-box h5 {
-  color: grey;
+  color: hsl(240, 85%, 85%);
   font-size: 1rem;
   font-weight: normal;
   padding-top: 0.5rem;
@@ -390,7 +431,7 @@ nav a {
 }
 
 .learn-box p {
-  color: grey;
+  color: hsl(240, 85%, 85%);
   font-size: 1rem;
   font-weight: normal;
   padding-top: 0.5rem;
@@ -412,6 +453,7 @@ nav a {
   font-weight: bold;
   padding: 2rem 0;
   text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .exhibit-container {
@@ -446,6 +488,7 @@ nav a {
   font-size: 2rem;
   font-weight: bold;
   padding: 0 0 1rem 1rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .exhibit-info p {
@@ -467,6 +510,14 @@ nav a {
   display: flex;
   align-items: center;
   background-color: hsla(240, 20%, 85%, 0.5);
+  color: rgb(169, 169, 169);
+}
+
+.exhibit1:hover {
+  display: flex;
+  align-items: center;
+  background-color: hsla(240, 20%, 85%, 0.5);
+  color: #ffffff;
 }
 
 .exhibit1 img {
@@ -479,6 +530,14 @@ nav a {
   display: flex;
   align-items: center;
   background-color: #ffffff;
+  color: rgb(169, 169, 169);
+}
+
+.exhibit2:hover {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: hsl(240, 85%, 85%);
 }
 
 .exhibit2 img {
@@ -535,4 +594,184 @@ footer a {
   font-family: "Nunito", sans-serif;
   font-size: 0.75rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    color: hsl(0, 0%, 35%);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    margin-top: 0;
+    background-color: hsla(240, 20%, 85%, 0.5);
+  }
+  .mobile nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.5714rem;
+    background-color: #ffffff;
+    position: fixed;
+  }
+  .mobile nav img {
+    padding-left: 1.1429rem;
+    padding-right: 1.1429rem;
+  }
+  header .mobile {
+    width: 100%;
+    height: auto;
+  }
+  .mobile-banner {
+    width: 100%;
+    height: auto;
+  }
+  .mobile-banner img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 4.5714rem;
+  }
+  .mobile-header-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-info {
+    width: 85%;
+    height: auto;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+  .mobile-info h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.2857rem;
+    font-weight: bold;
+    padding-top: 2.2857rem;
+    padding-left: 1.1429rem;
+    padding-bottom: 2.2857rem;
+  }
+  .mobile-info h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: medium;
+    padding-left: 1.1429rem;
+    padding-bottom: 1.7142rem;
+  }
+  .mobile-startbutton {
+    width: 20rem;
+    text-align: center;
+    background-color: hsl(0, 0%, 35%);
+    padding: 0.5rem;
+    border: 1px solid white;
+    margin-left: 1.1429rem;
+    padding-right: 1.1429rem;
+    margin-bottom: 2.2857rem;
+  }
+  .mobile-startbutton:hover {
+    background-color: hsl(240, 85%, 85%);
+  }
+  .mobile-startbutton a {
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+  }
+  .mobile-startbutton:visited a {
+    font-family: "Nunito", sans-serif;
+    color: hsl(240, 85%, 85%);
+  }
+  .mobile-startbutton {
+    transition: background-color 750ms linear 20ms;
+  }
+  .information-desktop {
+    display: none;
+  }
+  .information-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+  }
+  .information-mobile img {
+    width: 100%;
+    height: auto;
+    padding-top: 1.1429rem;
+  }
+  .mobile-information {
+    padding: 1.1429rem;
+  }
+  .mobile-information-text {
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 35%);
+  }
+  .mobile-information-text h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.1429rem;
+  }
+  .mobile-information-text p {
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0 0 1.1429rem 1.1429rem;
+    line-height: 1.2;
+  }
+  .mobile-information-text a {
+    color: hsl(240, 85%, 85%);
+    font-weight: bold;
+    padding-left: 1.1429rem;
+    padding-bottom: 4.5714rem;
+  }
+  .learn-boxes-desktop {
+    display: none;
+  }
+  .learn-boxes-mobile {
+    display: block;
+    margin: 1.1429rem;
+  }
+  .learning-subject {
+    display: block;
+    width: 100%;
+    height: 3.8571rem;
+    background-color: hsl(0, 0%, 35%);
+    padding: 1.7142rem 1.1429rem 1.7142rem 1.1429rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(240, 85%, 85%);
+    margin-bottom: 0.57rem;
+  }
+  .learning-subject:hover {
+    color: white;
+  }
+  .learning-subject {
+    transition: color 1s linear 20ms;
+  }
+  .exhibit-container {
+    display: block;
+  }
+  .exhibit-info {
+    display: none;
+  }
+  .exhibit-blox-desktop {
+    display: none;
+  }
+  .exhibit-content {
+    display: block;
+    width: 100%;
+  }
+  .exhibit {
+    height: auto;
+    margin: 0;
+  }
+  .exhibit video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.2857rem;
+  }
+  footer ul {
+    display: none;
+  }
 }
