@@ -622,7 +622,7 @@ footer a {
     align-items: center;
     width: 100%;
     height: 4.5714rem;
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
     position: fixed;
   }
   .mobile nav img {
@@ -679,11 +679,15 @@ footer a {
     margin-bottom: 2.2857rem;
   }
   .mobile-startbutton:hover {
-    background-color: hsl(240, 85%, 85%);
+    background-color: hsl(0, 0%, 25%);
+    border-color: hsl(240, 85%, 85%);
+  }
+  .mobile-startbutton:visited {
+    border-color: hsl(240, 85%, 85%);
   }
   .mobile-startbutton a {
     font-family: "Nunito", sans-serif;
-    color: #ffffff;
+    color: hsl(0, 0%, 100%);
   }
   .mobile-startbutton:visited a {
     font-family: "Nunito", sans-serif;
@@ -699,7 +703,7 @@ footer a {
     display: block;
     width: 100%;
     height: auto;
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
   }
   .information-mobile img {
     width: 100%;
@@ -749,10 +753,11 @@ footer a {
     margin-bottom: 0.57rem;
   }
   .learning-subject:hover {
-    color: white;
+    background-color: hsl(0, 0%, 26%);
+    color: hsl(0, 0%, 100%);
   }
   .learning-subject {
-    transition: color 1s linear 20ms;
+    transition: color 500ms linear 20ms;
   }
   .exhibit-container {
     display: block;
