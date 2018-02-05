@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link rel="icon" type="image/png" href="./sources/images/favicon.png">
+
 <link href="./sources/styles/reset.css" rel="stylesheet" type="text/css">
 <link href="./sources/styles/style.css" rel="stylesheet" type="text/css">
 
@@ -9,27 +11,25 @@
 </head>
 
 <body>
-  <!-- /* top navigation logo section */ -->
-  <nav class="container">
-    <div class="company">
-      <img src="./sources/images/ic-logo.svg" alt="logo Colmar Academy">
-      <span class="colmar-part">COLMAR</span>
-      <span class="academy-part">ACADEMY</span>
-    </div>
-
-    <!-- /* top navigation links section */ -->
-    <div class="menu-desktop">
-      <ul>
-        <li><a href="#">On campus</a></li>
-        <li><a href="#">Online</a></li>
-        <li><a href="#">Our companies</a></li>
-        <li><a href="#">Sign in</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- /* header section */ -->
-  <header>
+  <!-- /* header section desktop */ -->
+  <header class="desktop">
+    <!-- /* top navigation logo section */ -->
+    <nav class="container">
+      <div class="company">
+        <img src="./sources/images/ic-logo.svg" alt="logo Colmar Academy">
+        <span class="colmar-part">COLMAR</span>
+        <span class="academy-part">ACADEMY</span>
+      </div>
+      <!-- /* top navigation links section */ -->
+      <div class="menu-desktop">
+        <ul>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Our companies</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="header-content">
       <div class="banner">
         <img src="./sources/images/banner.jpg" alt="banner image">
@@ -38,101 +38,165 @@
         <div class="info">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <div class="startbutton">
-            <a>Start here</a>
-          </div>
+          <a href="#">
+            <div class="startbutton">
+              Start here
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- /* information section */ -->
-  <div class="container">
-    <div class="information-container">
-      <!-- /* information section left*/ -->
-      <div class="information-main">
-        <img src="./sources/images/information-main.jpg" alt="banner image">
-        <h2>It doesn't hurt to keep practicing</h2>
-        <p>"Carabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-        <h5>Emanuel, Sr Strategist at Hiring.com</h5>
+  <!-- /* header section mobile */ -->
+  <header class="mobile">
+    <nav>
+      <img src="./sources/images/ic-logo.svg" alt="logo Colmar Academy">
+      <a href="#"><img src="./sources/images/ic-on-campus.svg" alt="On campus"></a>
+      <a href="#"><img src="./sources/images/ic-online.svg" alt="Online"></a>
+      <a href="#"><img src="./sources/images/ic-login.svg" alt="Sign in"></a>
+    </nav>
+    <div class="mobile-banner">
+      <img src="./sources/images/banner.jpg" alt="banner image">
+    </div>
+    <div class="mobile-header-info">
+      <div class="mobile-info">
+        <h1>Learn something new everyday</h1>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <div class="mobile-startbutton">
+          <a>Start here</a>
+        </div>
       </div>
-      <!-- /* information section right (fun part)*/ -->
-      <div class="information-blox-desktop">
-        <div class="information1">
-          <img src="./sources/images/information-orientation.jpg" alt="information-orientation">
-          <div class="information-text">
-            <h4>Orientation date</h4>
-            <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
-            <a href="#">Read more</a>
-          </div>
+    </div>
+  </header>
+
+  <!-- /* information section desktop */ -->
+  <div class="information-desktop">
+    <div class="container">
+      <div class="information-container">
+        <!-- /* information section left*/ -->
+        <div class="information-main">
+          <img src="./sources/images/information-main.jpg" alt="banner image">
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>"Carabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <h5>Emanuel, Sr Strategist at Hiring.com</h5>
         </div>
-        <div class="information2">
-          <img src="./sources/images/information-campus.jpg" alt="information-campus">
-          <div class="information-text">
-            <h4>Our campus</h4>
-            <p>Find which campus is close by you</p>
-            <a href="#">Read more</a>
+        <!-- /* information section right*/ -->
+        <div class="information-blox-desktop">
+          <div class="information1">
+            <img src="./sources/images/information-orientation.jpg" alt="information-orientation">
+            <div class="information-text">
+              <h4>Orientation date</h4>
+              <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
-        </div>
-        <div class="information3">
-          <img src="./sources/images/information-guest-lecture.jpg" alt="guest-lecture">
-          <div class="information-text">
-            <h4>Special guest lecture</h4>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read more</a>
+          <div class="information2">
+            <img src="./sources/images/information-campus.jpg" alt="information-campus">
+            <div class="information-text">
+              <h4>Our campus</h4>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="information3">
+            <img src="./sources/images/information-guest-lecture.jpg" alt="guest-lecture">
+            <div class="information-text">
+              <h4>Special guest lecture</h4>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- /* information section mobile */ -->
+  <div class="information-mobile mobile">
+    <div class="mobile-information">
+      <img src="./sources/images/information-orientation-mobile.jpg" alt="information-orientation-mobile">
+      <div class="mobile-information-text">
+        <h4>Orientation date</h4>
+        <p>Tue 10/11 & Wed 10/12 8am-3pm</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="mobile-information">
+      <img src="./sources/images/information-campus-mobile.jpg" alt="information-campus-mobile">
+      <div class="mobile-information-text">
+        <h4>Our campus</h4>
+        <p>Find which campus is close by you</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="mobile-information">
+      <img src="./sources/images/information-guest-lecture-mobile.jpg" alt="guest-lecture-mobile">
+      <div class="mobile-information-text">
+        <h4>Special guest lecture</h4>
+        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- /* Learning section*/ -->
-    <section id="learning">
-      <div class="learning-container">
-        <h2>Start learning</h2>
-        <div class="learn-boxes">
-          <div class="learn-box"><img src="./sources/images/course-software.jpg" alt="Software course">
+
+  <!-- /* Learning section*/ -->
+  <section id="learning">
+    <div class="learning-desktop">
+      <h2>Start learning</h2>
+      <div class="learn-boxes-desktop">
+        <a class="learn-box" href="#">
+          <img src="./sources/images/course-software.jpg" alt="Software course">
             <h4>Software enginering</h4>
             <h5>COURCES</h5>
             <p>Web Development, Mobile Development, iOT, APIs</p>
-          </div>
-          <div class="learn-box"><img src="./sources/images/course-computer-art.jpg" alt="Computer art course">
-            <h4>Computer art</h4>
-            <h5>COURCES</h5>
-            <p>Imaging & design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-          </div>
-          <div class="learn-box"><img src="./sources/images/course-design.jpg" alt="Design course">
-            <h4>Design</h4>
-            <h5>COURCES</h5>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
-          <div class="learn-box"><img src="./sources/images/course-data.jpg" alt="Data course">
-            <h4>Data</h4>
-            <h5>COURCES</h5>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-          </div>
-          <div class="learn-box"><img src="./sources/images/course-business.jpg" alt="Business course">
-            <h4>Business</h4>
-            <h5>COURCES</h5>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
-          <div class="learn-box"><img src="./sources/images/course-marketing.jpg" alt="Marketing course">
-            <h4>Marketing</h4>
-            <h5>COURCES</h5>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
-          </div>
-        </div>
+                </a>
+        <a class="learn-box" href="#"><img src="./sources/images/course-computer-art.jpg" alt="Computer art course">
+          <h4>Computer art</h4>
+          <h5>COURCES</h5>
+          <p>Imaging & design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+        </a>
+        <a class="learn-box" href="#"><img src="./sources/images/course-design.jpg" alt="Design course">
+          <h4>Design</h4>
+          <h5>COURCES</h5>
+          <p>User Experience Design, User Research, Visual Design</p>
+        </a>
+        <a class="learn-box" href="#"><img src="./sources/images/course-data.jpg" alt="Data course">
+          <h4>Data</h4>
+          <h5>COURCES</h5>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </a>
+        <a class="learn-box" href="#"><img src="./sources/images/course-business.jpg" alt="Business course">
+          <h4>Business</h4>
+          <h5>COURCES</h5>
+          <p>Product Development, Business Development, Startup</p>
+        </a>
+        <a class="learn-box" href="#"><img src="./sources/images/course-marketing.jpg" alt="Marketing course">
+          <h4>Marketing</h4>
+          <h5>COURCES</h5>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </a>
       </div>
-    </section>
+      <div class="learn-boxes-mobile">
+        <a class="learning-subject" href="#">Software enginering</a>
+        <a class="learning-subject" href="#">Computer art</a>
+        <a class="learning-subject" href="#">Design</a>
+        <a class="learning-subject" href="#">Data</a>
+        <a class="learning-subject" href="#">Business</a>
+        <a class="learning-subject" href="#">Marketing</a>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- /* Exhibit section*/ -->
-    <section id="exhibit">
-      <h2>Thesis exhibit</h2>
-      <div class="exhibit-container">
-        <div class="exhibit-content">
-          <div class="exhibit">
-            <video src="./sources/videos/thesis.mp4" alt="video Thesis" autoplay loop controls>
+  <!-- /* Exhibit section*/ -->
+  <section id="exhibit">
+    <h2>Thesis exhibit</h2>
+    <div class="exhibit-container">
+      <div class="exhibit-content">
+        <div class="exhibit">
+          <video src="./sources/videos/thesis.mp4" alt="video Thesis" autoplay loop controls>
         </div>
         <div class="exhibit-info">
               <h4>Reimagine urban</h4>
@@ -140,20 +204,18 @@
         </div>
       </div>
       <div class="exhibit-blox-desktop">
-        <div class="exhibit1">
+        <a class="exhibit1" href="#">
           <img src="./sources/images/thesis-fisma.jpg" alt="thesis-fisma">
           <div class="exhibit-text">
             <h4>Fisma: Design and Process</h4>
             <p>Designer showcase of new prototype product</p>
-          </div>
-        </div>
-        <div class="exhibit2">
+        </div></a>
+        <a class="exhibit2" href="#">
           <img src="./sources/images/thesis-now-and-then.jpg" alt="thesis-now-and-then">
           <div class="exhibit-text">
             <h4>Now and then</h4>
             <p>Research study about New York</p>
-          </div>
-        </div>
+        </div></a>
 
       </div>
     </div>
