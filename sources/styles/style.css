@@ -258,7 +258,7 @@ a .startbutton {
   width: 60%;
   height: auto;
   padding: 0 1.5rem;
-  border-right: 1px solid dark;
+  border-right: 1px solid darkgrey;
   font-family: "Poppins", sans-serif;
   color: hsl(0, 0%, 35%);
 }
